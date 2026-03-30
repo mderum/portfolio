@@ -99,32 +99,54 @@ export default function App() {
   const [active, setActive] = useState<Tab>('Info')
 
   return (
-    <div className="app">
-      <div className="prompt">
-        <span className="prompt-user">alex@portfolio</span>
-        <span>:</span>
-        <span className="prompt-path">~/portfolio</span>
-        <span className="prompt-arrow">$</span>
-        <span>./run --section {active.toLowerCase()}</span>
-      </div>
+    <>
+      <div className="orb orb-1" />
+      <div className="orb orb-2" />
+      <div className="orb orb-3" />
 
-      <div className="tabs">
-        {TABS.map((tab, i) => (
-          <button
-            key={tab}
-            className={`tab${active === tab ? ' active' : ''}`}
-            onClick={() => setActive(tab)}
-          >
-            [{i + 1}] {tab}
-          </button>
-        ))}
-      </div>
+      <div className="app">
+        {/* macOS-style terminal window */}
+        <div className="terminal-window">
+          <div className="terminal-titlebar">
+            <span className="dot dot-red" />
+            <span className="dot dot-yellow" />
+            <span className="dot dot-green" />
+            <span className="terminal-title">alex@portfolio — zsh</span>
+          </div>
 
-      {active === 'Info'     && <Info />}
-      {active === 'Skills'   && <Skills />}
-      {active === 'Projects' && <Projects />}
-      {active === 'Stacks'   && <Stacks />}
-      {active === 'Tools'    && <Tools />}
-    </div>
+          <div className="terminal-body">
+            {/* prompt line */}
+            <div className="prompt">
+              <span className="prompt-user">alex@portfolio</span>
+              <span className="prompt-arrow">:</span>
+              <span className="prompt-path">~/portfolio</span>
+              <span className="prompt-arrow"> $</span>
+              <span className="prompt-cmd"> ./run --section {active.toLowerCase()}</span>
+              <span className="cursor" />
+            </div>
+
+            {/* tabs */}
+            <div className="tabs">
+              {TABS.map((tab, i) => (
+                <button
+                  key={tab}
+                  className={`tab${active === tab ? ' active' : ''}`}
+                  onClick={() => setActive(tab)}
+                >
+                  [{i + 1}] {tab}
+                </button>
+              ))}
+            </div>
+
+            {/* sections */}
+            {active === 'Info'     && <Info />}
+            {active === 'Skills'   && <Skills />}
+            {active === 'Projects' && <Projects />}
+            {active === 'Stacks'   && <Stacks />}
+            {active === 'Tools'    && <Tools />}
+          </div>
+        </div>
+      </div>
+    </>
   )
 }

@@ -5,53 +5,54 @@ export const data = {
     location: "India",
     email: "code.erum@gmail.com",
     github: "github.com/mderum/",
-    linkedin: "linkedin.com/in/alexcarter",
+    linkedin: "linkedin.com/in/md-erum",
     summary:
-      "5+ years building scalable distributed systems and REST/gRPC APIs. Passionate about clean architecture, performance tuning, and developer tooling.",
+      "Java backend developer with 5+ years of experience delivering scalable microservices and REST APIs across fintech, healthcare, and retail domains. Improved platform sync efficiency from 85% to 96% and Aadhaar-based payment services with biometric authentication. Proficient in Spring Boot, cloud platforms (AWS, Azure), and AI-assisted development tools.",
   },
   skills: [
     { name: "System Design",      level: 90 },
-    { name: "REST / gRPC APIs",   level: 95 },
+    { name: "REST APIs",   level: 95 },
     { name: "Database Modeling",  level: 85 },
     { name: "CI/CD Pipelines",    level: 80 },
     { name: "Performance Tuning", level: 75 },
-    { name: "Security & Auth",    level: 80 },
+    { name: "Security & Auth",    level: 70 },
   ],
   projects: [
     {
-      name: "PayStream",
-      desc: "High-throughput payment processing service handling 50k TPS with idempotency and retry logic.",
-      tech: ["Node.js", "PostgreSQL", "Redis", "Kafka"],
-      url: "github.com/alexcarter/paystream",
+      name: "AePS",
+      desc: "Enables customers to perform basic banking transactions such as balance inquiry, cash withdrawal, and mini statements using their Aadhaar number and biometric authentication.",
+      tech: ["Java", "Spring Boot", "Liferay-portlet","Bootstrap","JQuery","javascript"]
     },
     {
-      name: "AuthVault",
-      desc: "OAuth2 / OIDC identity provider with RBAC, MFA, and audit logging.",
-      tech: ["Go", "PostgreSQL", "JWT", "Docker"],
-      url: "github.com/alexcarter/authvault",
+      name: "Bank Statement Analyser",
+      desc: "Developed a service to parse bank statement PDFs and analyze spending patterns. Extracted transaction data to generate categorized insights for financial evaluation and decision-making.",
+      tech: ["Java", "Spring Boot", "Python"]
     },
     {
-      name: "LogPilot",
-      desc: "Centralized log aggregation pipeline with real-time alerting and dashboards.",
-      tech: ["Python", "Elasticsearch", "Kafka", "Grafana"],
-      url: "github.com/alexcarter/logpilot",
+      name: "Lead Generation Forms ( Loan / Job / Credit Cards / Saving Accounts )",
+      desc: "Developed dynamic lead generation forms using Spring Boot and Liferay. Integrated partner APIs to capture and forward user data for loans, jobs, credit cards, and savings accounts. Ensured modular design for easy onboarding of new partners and form types.",
+      tech: ["Java", "Spring Boot", "Liferay-portlet","Bootstrap","JQuery","javascript"]
     },
     {
-      name: "CacheLayer",
-      desc: "Distributed caching middleware with TTL strategies and cache-aside pattern.",
-      tech: ["Node.js", "Redis", "TypeScript"],
-      url: "github.com/alexcarter/cachelayer",
+      name: "Patient Data Sync",
+      desc: "Developed backend microservices for managing patient data sync, allergies, and prescriptions. Ensured reliable data integration across systems in a healthcare environment using Spring Boot and RESTful APIs.",
+      tech:  ["Java", "Spring Boot"]
+    },
+    {
+      name: "Pin And Password Encryption",
+      desc: "Implemented PIN and password encryption for secure login and wallet payments using industry-standard encryption algorithms. Ensured secure data storage and transmission to protect user credentials and transaction integrity.",
+      tech:  ["Java", "Spring Boot"]
     },
   ],
   stacks: [
-    { label: "Languages",     items: ["TypeScript", "Go", "Python", "Rust (learning)"] },
-    { label: "Databases",     items: ["PostgreSQL", "MongoDB", "Redis", "Elasticsearch"] },
-    { label: "Infrastructure",items: ["Docker", "Kubernetes", "Terraform", "AWS"] },
-    { label: "Messaging",     items: ["Kafka", "RabbitMQ", "NATS"] },
+    { label: "Languages",     items: ["Java","Python","Javascript"] },
+    { label: "Frameworks",     items: ["Spring Boot","Liferay"] },
+    { label: "Databases",     items: ["MySQL","PostgreSQL", "MongoDB", "Azure Cosmos DB", "Databricks SQL"] },
+    { label: "Infrastructure",items: ["Docker", "Kubernetes", "Azure", "AWS", "CI/CD"] },
+    { label: "Messaging",     items: ["Kafka"] },
   ],
   tools: [
-    "VS Code", "Neovim", "Postman", "Insomnia",
-    "DataGrip", "TablePlus", "k9s", "Lens",
-    "Git", "GitHub Actions", "ArgoCD", "Prometheus",
+   "Git", "Bitbucket", "Assembla", "Jira", "Confluence", "WinSCP", "Apache Ant", "Bash"
+    ,"ChatGPT", "Claude", "Gemini", "Kiro"
   ],
 };

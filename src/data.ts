@@ -43,6 +43,16 @@ export const data = {
       desc: "Implemented PIN and password encryption for secure login and wallet payments using industry-standard encryption algorithms. Ensured secure data storage and transmission to protect user credentials and transaction integrity.",
       tech:  ["Java", "Spring Boot"]
     },
+    {
+      name: "Card Vault",
+      desc: "Designed a secure storage mechanism for card information using the Web Crypto API, incorporating PBKDF2 and AES-GCM to ensure data confidentiality and integrity.",
+      tech:  ["Pure CSS", "React 19"]
+    },
+    {
+      name: "Pin And Password Encryption",
+      desc: "Implemented PIN and password encryption for secure login and wallet payments using industry-standard encryption algorithms. Ensured secure data storage and transmission to protect user credentials and transaction integrity.",
+      tech:  ["Java", "Spring Boot"]
+    },
   ],
   stacks: [
     { label: "Languages",     items: ["Java","Python","Javascript"] },

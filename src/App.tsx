@@ -52,7 +52,7 @@ function Projects() {
         <div className="project-card" key={p.name}>
           <div className="project-top">
             <span className="project-name">▸ {p.name}</span>
-            <a className="project-url" href={`https://${p.url}`} target="_blank" rel="noreferrer">{p.url}</a>
+            {/* <a className="project-url" href={`https://${p.url}`} target="_blank" rel="noreferrer">{p.url}</a> */}
           </div>
           <p className="project-desc">{p.desc}</p>
           <div className="project-tags">
@@ -111,13 +111,13 @@ export default function App() {
             <span className="dot dot-red" />
             <span className="dot dot-yellow" />
             <span className="dot dot-green" />
-            <span className="terminal-title">alex@portfolio — zsh</span>
+            <span className="terminal-title">md.erum@portfolio — zsh</span>
           </div>
 
           <div className="terminal-body">
             {/* prompt line */}
             <div className="prompt">
-              <span className="prompt-user">alex@portfolio</span>
+              <span className="prompt-user">md.erum@portfolio</span>
               <span className="prompt-arrow">:</span>
               <span className="prompt-path">~/portfolio</span>
               <span className="prompt-arrow"> $</span>
